@@ -1,0 +1,49 @@
+.nav_wrapper {
+  .nav_content {
+    padding: 0 10px;
+    background-color: $primary;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .links_container {
+        flex:1;
+      ul {
+        display: flex;
+        align-items: center;
+
+        padding: 0;
+
+        li {
+          padding: 0 20px;
+          list-style: none;
+
+          .dropdown_links {
+            display: flex;
+            flex-direction: column;
+
+            .dropdown_items {
+                padding: 5px 0;
+
+            }
+            
+             a {
+                color:$dark;
+                padding: 5px 0;
+
+                &:hover {
+                    color:$secondary;
+                }
+
+             }
+
+          }
+        }
+      }
+    }
+
+    .search_container {
+        min-width:300px;
+    }
+  }
+}

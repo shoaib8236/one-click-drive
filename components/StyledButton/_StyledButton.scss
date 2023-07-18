@@ -1,0 +1,317 @@
+@import "../../styles/variable.scss";
+
+
+.styled_button {
+    border-radius: 1px;
+    border: none;
+    margin: 8px;
+    padding: 14px 24px;
+    background: $primary;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: $shadow_medium;
+
+   &.m_0 {
+     margin: 0;
+   }
+
+    > .ripple {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: rgba($color: $light, $alpha: 0.3);
+        display: block;
+        content: "";
+        border-radius: 9999px;
+        opacity: 1;
+        animation: 0.8s ease 1 forwards ripple_effect;
+    }
+
+    .content {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &.transparent {
+        background: transparent;
+        color: $primary;
+        box-shadow: unset;
+        margin: 0;
+        
+        &.PX_0 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.dark {
+            color: $dark;
+        }
+
+        .ripple {
+            background: rgba($color: $primary, $alpha: 0.3);
+        }
+
+        &:hover {
+            .ripple {
+                background: rgba($color: $primary, $alpha: 0.3);
+            }
+        }
+
+        &.danger {
+            color: $danger;
+
+            &:hover {
+                background: $danger;
+                color: #fff;
+            }
+        }
+
+        &.warning {
+            color: $warning;
+
+            &:hover {
+                background: $warning;
+                color: #fff;
+            }
+        }
+
+        &.success {
+            color: $success;
+
+            &:hover {
+                background: $success;
+                color: #fff;
+            }
+        }
+
+        &.info {
+            color: $info;
+
+            &:hover {
+                background: $info;
+                color: #fff;
+            }
+        }
+
+        &.secondary {
+            color: $secondary;
+
+            &:hover {
+                background: $secondary;
+                color: #fff;
+            }
+        }
+    }
+
+    &.danger {
+        background: $danger;
+    }
+    &.warning {
+        background: $warning;
+    }
+    &.success {
+        background: $success;
+    }
+    &.info {
+        background: $info;
+    }
+    &.secondary {
+        background: $secondary;
+        color:$primary;
+    }
+
+    &.loading {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+
+        .content {
+            opacity: 0;
+        }
+    }
+
+    &.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    &.x_small {
+        padding: 4px 8px;
+    }
+
+    &.small {
+        padding: 8px 16px;
+    }
+
+    &.medium {
+        padding: 12px 20px;
+    }
+
+    &.large {
+        padding: 16px 24px;
+    }
+
+    &.full_width {
+        width: 100%;
+    }
+
+    &.rounded {
+        border-radius: 100px;
+    }
+
+    &.circle {
+        border-radius: 9999px;
+    }
+
+    &.outline {
+        background: transparent;
+        border: 1px solid $primary;
+        color: $primary;
+
+        .ripple {
+            background: $light_gray;
+        }
+
+        &:hover {
+            .ripple {
+                background: rgba($color: $light, $alpha: 0.3);
+            }
+        }
+
+        &.danger {
+            border: 1px solid $danger;
+            color: $danger;
+
+            &:hover {
+                background: $danger;
+                color: #fff;
+            }
+        }
+
+        &.warning {
+            border: 1px solid $warning;
+            color: $warning;
+
+            &:hover {
+                background: $warning;
+                color: #fff;
+            }
+        }
+
+        &.success {
+            border: 1px solid $success;
+            color: $success;
+
+            &:hover {
+                background: $success;
+                color: #fff;
+            }
+        }
+
+        &.info {
+            border: 1px solid $info;
+            color: $info;
+
+            &:hover {
+                background: $info;
+                color: #fff;
+            }
+        }
+
+        &.secondary {
+            border: 1px solid $secondary;
+            color: $secondary;
+
+            &:hover {
+                background: $secondary;
+                color: #fff;
+            }
+        }
+
+        &.disabled {
+            border: 1px solid $secondary;
+            color: $secondary;
+
+            &:hover {
+                background: transparent;
+                color: $secondary;
+            }
+        }
+    }
+
+    .btn_loader {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            animation: 1.5s linear infinite rotate;
+        }
+    }
+
+
+    
+    &.rounded {
+        border-radius:100px;
+        padding:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        
+
+        &.sm {
+            width:30px;
+            height:30px;
+        }
+
+        &.md {
+            width:50px;
+            height: 50px;
+        }
+
+        &.lg {
+            width:80px;
+            height: 80px;
+        }
+
+
+    }
+
+}
+
+@keyframes ripple_effect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(10);
+        opacity: 0.375;
+    }
+    100% {
+        transform: scale(35);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

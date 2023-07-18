@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "variable.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    font-size: 16px;
+    color: $text_color;
+    background-color: $body_color;
+}
+
+h1 {
+    font-size: $title_desktop;
+    font-weight: 600;
+    color: $text_color;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: $subtitle_desktop;
+    font-weight: 600;
+    color: $text_color;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: $paragraph_desktop;
+    font-weight: 600;
+    color: $text_color;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: $paragraph_desktop;
+    font-weight: 400;
+    color: $text_color;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    transition: $transition_light;
+    &:hover {
+        color: darken($primary, 10%);
+    }
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: $transition_light;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+    transition: $transition_light;
+    &:focus {
+        box-shadow: $shadow_high;
+    }
+}
+
+textarea {
+    border: none;
+    outline: none;
+    transition: $transition_light;
+    &:focus {
+        box-shadow: $shadow_high;
+    }
+}
+
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    user-select: none;
+}
+
+// Responsive
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: $title_tablet;
+    }
+    h2 {
+        font-size: $subtitle_tablet;
+    }
+    h3 {
+        font-size: $paragraph_tablet;
+    }
+    p {
+        font-size: $paragraph_tablet;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: $title_mobile;
+    }
+    h2 {
+        font-size: $subtitle_mobile;
+    }
+    h3 {
+        font-size: $paragraph_mobile;
+    }
+    p {
+        font-size: $paragraph_mobile;
+    }
+}
+
+
+// antd error class
+
+.ant-form-item-explain-error {
+    color: $danger !important;
+}
+
+
+
+

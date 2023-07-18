@@ -1,0 +1,17 @@
+.styled_section {
+    padding: $sec_padding 0;
+}
+
+@media (max-width: $tablet) {
+    .styled_section {
+        padding: $sec_padding_tablet 0;
+        
+    }
+}
+
+@media (max-width: $mobile) {
+    .styled_section {
+        padding: $sec_padding_mobile 0;
+    }
+}
+

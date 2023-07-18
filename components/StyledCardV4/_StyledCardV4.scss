@@ -1,0 +1,11 @@
+.styled_card_1 {
+  box-shadow: $shadow;
+  padding: 20px;
+  border-radius: $radius_medium;
+  overflow: hidden;
+  max-width: 400px;
+  position: relative;
+  transition: $transition_light;
+  background-color: $light;
+
+}

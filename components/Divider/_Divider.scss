@@ -1,0 +1,36 @@
+.styled_divider {
+    width: 100%;
+    border-bottom: 1px solid $border_color;
+    position:relative;
+
+    &.dotted {
+        border-bottom: 1px dotted $border_color;
+    }
+
+    &.dashed {
+        border-bottom: 1px dashed $border_color;
+    }
+
+    .divider_title {
+        position: absolute;
+        background-color: $light;
+        top: 0;
+        transform: translateY(-50%);
+
+        &.center {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &.left {
+            left: 0;
+        }
+
+        &.right {
+            right: 0;
+        }
+
+        
+
+    }
+}

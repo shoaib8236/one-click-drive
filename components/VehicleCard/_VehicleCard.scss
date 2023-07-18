@@ -1,0 +1,88 @@
+.styled_vehicle_card {
+    box-shadow: $shadow;
+    border-radius: $radius_medium;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $light;
+
+    .favorite {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+
+     
+    }
+
+    .vehicle_image {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: $radius_medium;
+    }
+
+    .content_section {
+        padding: 10px;
+        flex: 1;
+
+        .title {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            span {
+                padding: 4px 15px;
+                color: $secondary;
+                border-radius: $radius_low;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    font-size: 20px;
+                    margin: 0 0 0 10px;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+        .car_rental_details {
+            p {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
+        .other_details {
+            display: flex;
+            .right_details_area {
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: $font_medium;
+                }
+            }
+        }
+
+        .left_details_area {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            img {
+                width: 100px;
+                border-radius: $radius_low;
+            }
+        }
+    }
+}

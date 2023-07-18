@@ -1,0 +1,52 @@
+.styled_card_1 {
+  box-shadow: $shadow;
+  padding: 20px;
+  border-radius: $radius_medium;
+  overflow: hidden;
+  max-width: 400px;
+  position: relative;
+  transition: $transition_light;
+  background-color: $light;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $primary, $alpha: 1);
+    opacity: 0;
+    z-index: -1;
+    transition: $transition_light;
+    transform: translateX(-100%);
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  button {
+    font-size:14px;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    &::after {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    h3,
+    p,button {
+      color: $light;
+      transition: $light;
+    }
+
+}
+.card_content {
+    margin-top: 20px;
+}
+}

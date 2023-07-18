@@ -1,0 +1,37 @@
+@import "../../styles/variable.scss";
+
+.login_wrapper {
+    height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login_container {
+        padding: 40px;
+        background-color: #fff;
+        border-radius: $radius_medium;
+        box-shadow: $shadow_medium;
+        width: 100%;
+        max-width: 400px;
+
+        .login_title {
+            text-align: center;
+            font-size: $title_desktop;
+            margin-bottom: 20px;
+            color: $primary;
+            
+        }
+
+        .dont_have_account {
+            text-align: center;
+            margin-top: 20px;
+            a {
+                color: $primary;
+                font-weight: 500;
+                &:hover {
+                    color: darken($primary, 10%);
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,61 @@
+.styled_banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image:url("/home-banner.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-color:$overlay;
+  background-blend-mode:overlay;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:none;
+  }
+  
+  .overlay {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .content_area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    background-color: transparent;
+    width: max-content;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+ 
+    border-radius:$radius_medium;
+
+    h1 {
+        color: $light;
+    }
+    p {
+        color: $light;
+    }
+  }
+}

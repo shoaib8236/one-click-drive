@@ -1,0 +1,21 @@
+.styled_card_v2 {
+    box-shadow: $shadow;
+    padding: 20px;
+    border-radius: $radius_medium;
+    overflow: hidden;
+    max-width: 400px;
+    position: relative;
+    transition: $transition_light;
+    background-color: $light;
+
+    &.pointer {
+        cursor: pointer;
+    }
+
+    img {
+        height: 100px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
