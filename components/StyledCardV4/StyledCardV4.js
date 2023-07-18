@@ -13,7 +13,9 @@ const StyledCardV4 = (props) => {
     buttonText = "View All Car",
   } = props;
 
-  return <div className="styled_card_4">asdasd</div>;
+  return <div className="styled_card_4">
+    Testing card
+  </div>;
 };
 
 export default StyledCardV4;

@@ -28,7 +28,7 @@ const MultiSlider = (props) => {
       min: 0,
       items: 1,
     },
-    swipeable = false,
+    swipeable = true,
     draggable = true,
     showDots = false,
     ssr = true,
