@@ -41,13 +41,13 @@
 }
 
 .rental_deals {
-  background-image:url("/home-banner.jpg");
-  background-size:cover;
-  background-attachment:fixed;
-  background-position:center;
-  background-color:$overlay;
-  background-blend-mode:overlay;
-  
+  background-image: url("/home-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: $overlay;
+  background-blend-mode: overlay;
+
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   padding: 120px 0px;
   position: relative;
@@ -58,7 +58,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
 
     ul {
@@ -66,7 +66,7 @@
       max-width: 1200px;
       height: 100%;
       display: flex;
-  
+
       .line {
         height: 100%;
         width: 2px;
@@ -77,48 +77,91 @@
     }
   }
 
+  .rental_deal_card {
+    position: relative;
+    z-index: 999;
+    padding: 100px 40px;
 
+    h3,
+    p,
+    svg {
+      color: $light;
+    }
 
-  
-    .rental_deal_card {
-      position:relative;
-      z-index:999;
-      padding:100px 40px;
+    p {
+      line-height: 1.8;
+    }
 
+    .counts {
+      position: absolute;
+      z-index: -1;
+      font-size: 200px;
+      left: 0;
+      line-height: 1;
+      top: 50px;
+      opacity: 0.3;
+      font-weight: $font_bold;
+    }
 
-      h3,p,svg {
-        color:$light;
-      }
+    .rental_deal_card_header {
+      display: flex;
+      align-items: center;
+      margin: 0 0 15px 0;
 
-      p {
-        line-height: 1.8;
-      }
-
-      .counts {
-        position: absolute;
-        z-index: -1;
-        font-size: 200px;
-        left: 0;
-        line-height: 1;
-        top: 50px;
-        opacity: 0.3;
-        font-weight: $font_bold;
-      }
-
-      .rental_deal_card_header {
-        display:flex;
-        align-items:center;
-        margin:0 0 15px 0;
-        
-
-        .deals_icon {
-          background-color: rgba($color: $light, $alpha: 0.3);
-          width: 40px;
-          height: 40px;
-          border-radius:40px;
-          margin:0 15px 0 0;
-        }
+      .deals_icon {
+        background-color: rgba($color: $light, $alpha: 0.3);
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        margin: 0 15px 0 0;
       }
     }
+  }
+}
+
+.home_content_area {
+  background-image: url("/home-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: $overlay;
+  background-blend-mode: overlay;
+
+  h2 {
+    margin-bottom: 20px;
+    color:$light;
+  }
+  p {
+    color:$light;
+  }
   
+  ul {
+    
+    margin-bottom: 20px; 
+    margin-left: 20px;
+
+    li {
+      position:relative;
+      padding-left:10px;
+      color:$light;
+       
+
+      &::before {
+        content: "";
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: $primary;
+        border-radius: 10px;
+        border: solid 2px $light;
+        left: -2px;
+        top: 8px;
+
+
+      }
+
+    }
+  }
+
 }

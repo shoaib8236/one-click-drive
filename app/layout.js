@@ -1,11 +1,7 @@
-'use client'
-
 import Navbar from '@/components/Navbar/Navbar'
 import '../styles/main.scss'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import  React, {useEffect, useState}  from 'react';
-import AppLoader from '@/components/AppLoader/AppLoader'
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,26 +9,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-  if (typeof window !== 'undefined') {
-    setLoading(false)
-  }
-}, []);
-
   return (
     <html lang="en">
+
       <body className={inter.className}>
-        {
-          loading ? <AppLoader/> : 
-          <>
-           <Navbar />
-          {children}
-        </>
-        }
-      </body>
+        
+      <Navbar />
+        {children}</body>
     </html>
   )
 }

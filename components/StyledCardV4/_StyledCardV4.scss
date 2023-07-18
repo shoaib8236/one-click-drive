@@ -1,11 +1,46 @@
-.styled_card_1 {
+.styled_card_4 {
   box-shadow: $shadow;
-  padding: 20px;
   border-radius: $radius_medium;
   overflow: hidden;
-  max-width: 400px;
   position: relative;
   transition: $transition_light;
-  background-color: $light;
+  background-color: $light;   
 
+  .card_header {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    height: 50px;
+  }
+
+  .card_body {
+    display: flex;
+    align-items: center;
+
+    > div {
+      flex: 1;
+      padding: 15px;
+    }
+
+    .card_image {
+      max-width:250px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .content_area {
+      ul {
+        li {
+         svg {
+          margin-right: 5px;
+         }
+        }
+      }
+    }
+  }
 }
