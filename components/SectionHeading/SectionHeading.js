@@ -8,10 +8,12 @@ const SectionHeading = (props) => {
   const { title = "", content = "", onClick = () => {}, btnText = "" } = props;
   return (
     <div>
-      <h2 className="clr_primary font_semi_bold">{title}</h2>
-      <StyledButton className="small">
-        {btnText} <BsArrowRight className="ml_10" />
-      </StyledButton>
+      <div className="flex_between">
+        <h2 className="clr_primary font_semi_bold">{title}</h2>
+        <StyledButton className="small">
+          {btnText} <BsArrowRight className="ml_10" />
+        </StyledButton>
+      </div>
 
       <Divider className="dashed mt_20 mb_20" />
       <p>{content}</p>
