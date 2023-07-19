@@ -102,6 +102,7 @@
 
         &.secondary {
             color: $secondary;
+            
 
             &:hover {
                 background: $secondary;
@@ -124,7 +125,7 @@
     }
     &.secondary {
         background: $secondary;
-        color:$primary;
+        color:$light;
     }
 
     &.loading {
