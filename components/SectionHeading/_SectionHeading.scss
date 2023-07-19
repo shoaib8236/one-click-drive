@@ -1,0 +1,14 @@
+
+@media screen and (max-width:$mobile) {
+    .section_title_wrapper {
+        .flex_between {
+            display:unset;
+
+            button {
+                margin:10px;
+            }
+
+        }
+    }
+    
+}

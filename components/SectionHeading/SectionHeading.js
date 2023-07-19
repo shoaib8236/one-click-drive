@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const SectionHeading = (props) => {
   const { title = "", content = "", onClick = () => {}, btnText = "" } = props;
   return (
-    <div>
+    <div className="section_title_wrapper">
       <div className="flex_between">
         <h2 className="clr_primary font_semi_bold">{title}</h2>
         <StyledButton className="small">

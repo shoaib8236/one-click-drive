@@ -40,3 +40,17 @@
     color: $secondary;
   }
 }
+
+
+@media screen and (max-width:$tablet) {
+
+  .footer_wrapper {
+    padding:140px 20px 20px 20px;
+
+    ul {
+      padding:20px 0;
+    }
+
+  }
+
+}
