@@ -44,12 +44,23 @@
     left: 50%;
     transform: translate(-50%, -50%);   
     background-color: transparent;
-    width: max-content;
+    width: 100%;
+    max-width: max-content;
     max-width: 800px;
     text-align: center;
     padding: 20px;
  
-    border-radius:$radius_medium;
+
+      .styled_banner_content {
+        display:flex;
+        justify-content: center;
+
+        .styled_search  {
+          min-width:300px;
+          margin-right: 20px;
+        }
+
+      }
 
     h1 {
         color: $light;
@@ -58,4 +69,22 @@
         color: $light;
     }
   }
+}
+
+
+@media screen and (max-width: $mobile) {
+
+  .styled_banner {
+    .content_area {
+      .styled_banner_content {
+        display:unset;
+        .styled_search  {
+          min-width:100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  
 }

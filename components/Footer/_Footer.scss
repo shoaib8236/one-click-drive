@@ -1,0 +1,42 @@
+/* Assuming $primary, $light, and $secondary are valid color variables defined elsewhere */
+
+.footer_wrapper {
+  padding: 80px 60px;
+  clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: $primary;
+
+  p,
+  li,
+  a {
+    color: $light;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  .footer_logo {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    padding: 0 20px;
+    
+    li {
+      padding: 5px 0;
+
+      .footer_contact_items {
+        display:flex;
+        flex-direction:column;
+
+        a {
+          padding:5px 0;
+        }
+      }
+
+    }
+  }
+  
+  h3 {
+    opacity: 0.8;
+    color: $secondary;
+  }
+}
