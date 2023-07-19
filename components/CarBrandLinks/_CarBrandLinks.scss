@@ -1,0 +1,25 @@
+.car_brand_links {
+    display:flex;
+    flex-wrap:wrap;
+    min-width:680px;
+
+    a {
+        display:flex;
+        align-items:center;
+        flex-basis: 25%;
+        font-size:14px;
+        padding:10px 30px;
+    }
+    .brand_links_content {
+        margin-left:10px;
+        display:flex;
+        flex-direction:column;
+
+        span {
+            &:last-child {
+                font-size:12px;
+            }
+        }
+
+    }
+}

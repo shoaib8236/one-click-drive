@@ -7,6 +7,7 @@ import Dropdown from "../Dropdown/Dropdown";
 import StyledSearch from "../StyledSearch/StyledSearch";
 import { StyledButton } from "../StyledButton/StyledButton";
 import { AiOutlineMenu } from "react-icons/ai";
+import CarBrandLinks from "../CarBrandLinks/CarBrandLinks";
 
 const Navbar = () => {
 
@@ -63,27 +64,8 @@ const Navbar = () => {
             </li>
             <li>
               <Dropdown title="Car Brands">
-                <div className="dropdown_links">
-                  <Dropdown
-                    contentClassName="position_right"
-                    className="dropdown_items"
-                    btnClassName="dark">
-                    <div className="dropdown_links">
-                      <Link href="/dubai"> Dubai </Link>
-                      <Link href="/deep-sea-fishing"> Deep Sea Fishing </Link>
-                      <Link href="/abu-dhabi"> Abu Dhabi </Link>
-                    </div>
-                  </Dropdown>
-                  <Dropdown
-                    contentClassName="position_right"
-                    className="dropdown_items"
-                    btnClassName="dark">
-                    <div className="dropdown_links">
-                      <Link href="/dubai"> Dubai </Link>
-                      <Link href="/deep-sea-fishing"> Deep Sea Fishing </Link>
-                      <Link href="/abu-dhabi"> Abu Dhabi </Link>
-                    </div>
-                  </Dropdown>
+                <div className="dropdown_links">                
+                     <CarBrandLinks/>                              
                 </div>
               </Dropdown>
             </li>
