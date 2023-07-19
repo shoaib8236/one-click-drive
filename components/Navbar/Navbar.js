@@ -8,11 +8,14 @@ import StyledSearch from "../StyledSearch/StyledSearch";
 import { StyledButton } from "../StyledButton/StyledButton";
 import { AiOutlineMenu } from "react-icons/ai";
 import CarBrandLinks from "../CarBrandLinks/CarBrandLinks";
+import { useRouter ,usePathname } from "next/navigation";
 
-const Navbar = () => {
+
+const Navbar = (props) => {
 
   const menuRef = useRef(null)
   const linkRef = useRef(null)
+  const pathname = usePathname()
   
   const onOpenMobileMenu = useCallback(() => {
     if (menuRef.current && linkRef.current) {
@@ -25,6 +28,18 @@ const Navbar = () => {
       }
     }
   }, [menuRef, linkRef])
+
+
+  useEffect(()=> {
+
+    if (menuRef.current && linkRef.current) {
+      if (menuRef.current.classList.contains("open_menu")) {
+        menuRef.current.classList.remove("open_menu")
+        linkRef.current.classList.remove("animate_links")
+      } 
+    }
+
+  }, [pathname, menuRef, linkRef])
 
   return (
     <nav className="nav_wrapper">

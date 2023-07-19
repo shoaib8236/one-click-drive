@@ -1,25 +1,47 @@
 .car_brand_links {
-    display:flex;
-    flex-wrap:wrap;
-    min-width:680px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 680px;
 
     a {
-        display:flex;
-        align-items:center;
+        display: flex;
+        align-items: center;
         flex-basis: 25%;
-        font-size:14px;
-        padding:10px 30px;
+        font-size: 14px;
+        padding: 10px 30px;
     }
+
     .brand_links_content {
-        margin-left:10px;
-        display:flex;
-        flex-direction:column;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
 
         span {
             &:last-child {
-                font-size:12px;
+                font-size: 12px;
             }
         }
 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .car_brand_links {
+
+        min-width: 210px;
+        max-width: 210px;
+
+        a {
+            flex-basis: 50%;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .car_brand_links a {
+        flex-basis: 100%;
+        padding: 10px 15px;
     }
 }
