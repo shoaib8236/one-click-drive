@@ -49,7 +49,7 @@ const Faq = () => {
     return (
         <div className='faq_wrapper'>
             <h2>Frequently Asked Questions</h2>
-            <Collapse bordered={false} items={items} defaultActiveKey={['1']} onChange={onChange} />
+            <Collapse bordered={false} items={items} defaultActiveKey={['1', '3', '5']} onChange={onChange} />
         </div>
     )
 }

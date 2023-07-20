@@ -22,6 +22,4 @@ Divider.propTypes = {
   title: PropTypes.string,
   titlePosition: PropTypes.string,
   style: PropTypes.object,
-
-
 };

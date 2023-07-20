@@ -1,0 +1,20 @@
+.car_brand_main {
+
+    .content_area {
+        display: flex;
+    }
+    .cars_showcase {
+        padding:0 20px;
+        flex-grow: 1;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .car_brand_main {
+
+    .cars_showcase {
+        padding: 0;
+    }
+    }
+}

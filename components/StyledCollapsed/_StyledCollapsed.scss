@@ -1,0 +1,30 @@
+.styled_collapse {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding:10px;
+  padding-bottom: 40px;
+  position: relative;
+  border: solid 1px $border_color;
+  border-radius: $radius_low;
+  margin-bottom: 50px;
+
+
+  .item_tags {
+    display: flex;
+    align-items: center;
+    background: $secondary;
+    color: $light;
+    padding: 6px 20px;
+    border-radius: $radius_extraHigh;
+
+  }
+
+  .expand_btn_wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+}
