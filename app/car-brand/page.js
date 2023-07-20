@@ -25,22 +25,22 @@ const CarBrand = ()=> {
                             <Divider className={"mb_30 mt_30"}/>
                             <Row gutter={[20,20]}>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
                                 <Col lg={8} md={12} sm={24} xs={24}>
-                                    <VehicleCard showSocialLinks showVerified/>
+                                    <VehicleCard data={{title:"Toyota"}} showSocialLinks showVerified/>
                                 </Col>
 
                             </Row>
