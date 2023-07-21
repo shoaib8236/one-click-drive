@@ -1,0 +1,35 @@
+.gallery {
+  column-count: 4;
+  gap: 10px;
+  padding: 20px;
+}
+
+.image {
+  img {
+    height: auto;
+    width: 100%;
+    transition: $transition_light;
+    &:hover {
+      filter: grayscale(100%);
+    }
+  }
+}
+
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: $tablet) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: $mobile_small) {
+  .gallery {
+    column-count: 1;
+  }
+}

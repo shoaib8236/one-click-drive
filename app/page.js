@@ -84,9 +84,9 @@ export default function Home() {
       <Section>
         <div className="content_wrap _car_brands">
           <div className="car_inner_section">
-            <h2 className="clr_primary font_semi_bold">
+            <h1 className="clr_secondary">
               Find car rental and driver services near you
-            </h2>
+            </h1>
             <div className="styled_select">
               {/* <Select placeholder="Select">
                 {citiesOfCountry.map((item, index) => (
@@ -122,99 +122,100 @@ export default function Home() {
               as low as AED 30 per day.
             </p>
           </div>
-
+        </div>
+      </Section>
+      <Section className={"bg_lime"}>
+        <div className={"content_wrap"}>
           <SectionHeading
-            title="Rent A Car From Top Brands"
-            content="Get on a road-trip now with the best deals for high-end cars manufactured by top automobile companies in the world."
-            btnText="All Brands"
+              title="Rent A Car From Top Brands"
+              content="Get on a road-trip now with the best deals for high-end cars manufactured by top automobile companies in the world."
+              btnText="All Brands"
           />
 
           <div className="brands_slider">
             <MultiSlider {...sliderSettings}>
               {cardBrands.map((item, index) => (
-                <StyledCardV2
-                  className="m_10 pointer"
-                  key={index}
-                  image={item.image}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  buttonText="View All Car"
-                />
+                  <StyledCardV2
+                      className="m_10 pointer"
+                      key={index}
+                      image={item.image}
+                      title={item.title}
+                      subtitle={item.subtitle}
+                      buttonText="View All Car"
+                  />
               ))}
             </MultiSlider>
           </div>
-
+        </div>
+      </Section>
+      <Section>
+        <div className={"content_wrap"}>
           <SectionHeading
-            title="Latest Car Rental Offers in Dubai"
-            content="Choose among cars with in-demand driving features and high mileage, and rent a car at the best price. Exclusive car rental discounts, updated seasonally!"
-            btnText="View All"
+              title="Latest Car Rental Offers in Dubai"
+              content="Drive in style! Make your first car rental a great experience with luxury rental vehicles from top brands such as Rolls Royce, BMW, Land Rover, among others."
+              btnText="View All"
           />
 
           <div className="brands_slider">
             <MultiSlider {...carsSliderSettings}>
               {cardBrands.map((item, index) => (
-                <VehicleCard className="m_10 pointer" key={index} data={item} />
+                  <VehicleCard className="m_10 pointer" key={index} data={item} />
               ))}
             </MultiSlider>
           </div>
-
+        </div>
+      </Section>
+      <Section className={"bg_lime"}>
+        <div className={"content_wrap"}>
           <SectionHeading
-            title="Luxury & Sports Cars"
-            content="Drive in style! Make your first car rental a great experience with luxury rental vehicles from top brands such as Rolls Royce, BMW, Land Rover, among others."
-            btnText="View All"
+              title="SUVs for rent in Dubai"
+              content="From spacious 7-seaters to the latest 5-seater sports utility vehicles, we feature a broad range of trendy SUV car rental deals in the UAE."
+              btnText="View All"
           />
 
           <div className="brands_slider">
             <MultiSlider {...carsSliderSettings}>
               {cardBrands.map((item, index) => (
-                <VehicleCard className="m_10 pointer" key={index} data={item} />
+                  <VehicleCard className="m_10 pointer" key={index} data={item} />
               ))}
             </MultiSlider>
           </div>
-
+        </div>
+      </Section>
+      <Section>
+        <div className={"content_wrap"}>
           <SectionHeading
-            title="SUVs for rent in Dubai"
-            content="From spacious 7-seaters to the latest 5-seater sports utility vehicles, we feature a broad range of trendy SUV car rental deals in the UAE."
-            btnText="View All"
+              hideBtn
+              title="Beyond Car Rentals"
+              content="Explore our suite of curated services such as chauffeur, buggy and safe driver provided by exclusive partners and managed by OneClickDrive."
+              btnText="View All"
           />
 
           <div className="brands_slider">
             <MultiSlider {...carsSliderSettings}>
               {cardBrands.map((item, index) => (
-                <VehicleCard className="m_10 pointer" key={index} data={item} />
+                  <StyledCardV3
+                      className="m_10 pointer"
+                      key={index}
+                      data={item}
+                  />
               ))}
             </MultiSlider>
           </div>
-
+        </div>
+      </Section>
+      <Section className={"bg_lime"}>
+        <div className={"content_wrap"}>
           <SectionHeading
-            hideBtn
-            title="Beyond Car Rentals"
-            content="Explore our suite of curated services such as chauffeur, buggy and safe driver provided by exclusive partners and managed by OneClickDrive."
-            btnText="View All"
+              title="Chauffeur Service in Dubai"
+              content="Our luxury chauffeur services include Point to Point, Airport Transfer and Hourly basis, provided by our hand-picked and exclusive partners."
+              btnText="View All"
           />
 
           <div className="brands_slider">
             <MultiSlider {...carsSliderSettings}>
               {cardBrands.map((item, index) => (
-                <StyledCardV3
-                  className="m_10 pointer"
-                  key={index}
-                  data={item}
-                />
-              ))}
-            </MultiSlider>
-          </div>
-
-          <SectionHeading
-            title="Chauffeur Service in Dubai"
-            content="Our luxury chauffeur services include Point to Point, Airport Transfer and Hourly basis, provided by our hand-picked and exclusive partners."
-            btnText="View All"
-          />
-
-          <div className="brands_slider">
-            <MultiSlider {...carsSliderSettings}>
-              {cardBrands.map((item, index) => (
-                <VehicleCard className="m_10 pointer" key={index} data={item} />
+                  <VehicleCard className="m_10 pointer" key={index} data={item} />
               ))}
             </MultiSlider>
           </div>
@@ -225,9 +226,9 @@ export default function Home() {
         <div className="content_wrap rental_companies">
           <Row>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-              <h2 className="clr_primary">
+              <h1 className="clr_secondary">
                 Find the best car rental company for you
-              </h2>
+              </h1>
               <Divider className="mt_20 mb_20" />
               <ul>
                 <li>
@@ -350,7 +351,7 @@ export default function Home() {
       <Section className="home_content_area">
         <div className="content_wrap">
           <div>
-            <h2>Important tips for renting a car in Dubai</h2>
+            <h1 className={"clr_light"}>Important tips for renting a car in Dubai</h1>
             <div>
               <ul>
                 <li>
@@ -391,7 +392,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <h2>Find cheap car rental deals and discounts</h2>
+            <h1 className={"clr_light"}>Find cheap car rental deals and discounts</h1>
             <div>
               <ul>
                 <li>
@@ -413,7 +414,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <h2>Top benefits for renting a car with a driver in Dubai</h2>
+            <h1 className={"clr_light"}>Top benefits for renting a car with a driver in Dubai</h1>
             <div>
               <p>
                 There are a multitude of advantages of hiring a car and driver

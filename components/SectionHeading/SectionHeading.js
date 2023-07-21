@@ -9,7 +9,7 @@ const SectionHeading = (props) => {
   return (
     <div className="section_title_wrapper">
       <div className="flex_between">
-        <h2 className="clr_primary font_semi_bold">{title}</h2>
+        <h1 className="clr_secondary">{title}</h1>
         <StyledButton className="small">
           {btnText} <BsArrowRight className="ml_10" />
         </StyledButton>

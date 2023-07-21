@@ -81,6 +81,18 @@
   color: $light;
 }
 
+.bg_dark {
+  background-color: $dark;
+}
+
+.bg_light {
+  background-color: $light;
+}
+
+.bg_lime {
+  background-color: $lime;
+}
+
 .font_regular {
   font-weight: $font_regular;
 }
@@ -167,6 +179,26 @@
 .p_30 {
   padding: 30px;
 }
+
+.text_center {
+  text-align: center;
+}
+
+/* Text Left Class */
+.text_left {
+  text-align: left;
+}
+
+/* Text Right Class */
+.text_right {
+  text-align: right;
+}
+
+/* Text Justify Class */
+.text_justify {
+  text-align: justify;
+}
+
 
 
 

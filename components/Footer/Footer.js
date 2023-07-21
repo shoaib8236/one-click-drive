@@ -1,21 +1,24 @@
 "use client"
 
-import { Col, Row } from 'antd';
+import {Col, Row} from 'antd';
 import Link from 'next/link';
 import React from 'react'
 
 
 const Footer = (props) => {
 
-    const { } = props;
+    const {} = props;
 
     return (
         <div className='footer_wrapper'>
 
             <Row>
                 <Col lg={6} md={24} sm={24} xs={24}>
-                    <img className="footer_logo" src="https://www.oneclickdrive.com/application/views/img/footer-logo.png?v2" />
-                    <p>Find the best deals for budget and luxury / sports car rentals, chauffeur service and driver on hire service. Headquartered in Dubai, our services are available in select cities across the globe.</p>
+                    <img className="footer_logo"
+                         src="https://www.oneclickdrive.com/application/views/img/footer-logo.png?v2"/>
+                    <p>Find the best deals for budget and luxury / sports car rentals, chauffeur service and driver on
+                        hire service. Headquartered in Dubai, our services are available in select cities across the
+                        globe.</p>
                 </Col>
                 <Col lg={4} md={24} sm={24} xs={24}>
                     <ul>
@@ -32,12 +35,12 @@ const Footer = (props) => {
                 </Col>
                 <Col lg={4} md={24} sm={24} xs={24}>
                     <ul>
-                        <li><Link href={""}>About us</Link></li>
-                        <li><Link href={""}>Terms & conditions</Link></li>
-                        <li><Link href={""}>Privacy policy</Link></li>
-                        <li><Link href={""}>terms of use</Link></li>
-                        <li><Link href={""}>contact us</Link></li>
-                        <li><Link href={""}>sitemap XML</Link></li>
+                        <li><Link href={"about-us"}>About us</Link></li>
+                        <li><Link href={"terms-and-condition"}>Terms & conditions</Link></li>
+                        <li><Link href={"privacy-policy"}>Privacy policy</Link></li>
+                        <li><Link href={"terms-of-use"}>terms of use</Link></li>
+                        <li><Link href={"contact-us"}>contact us</Link></li>
+                        <li><Link href={"/"}>sitemap XML</Link></li>
                     </ul>
                 </Col>
                 <Col lg={4} md={24} sm={24} xs={24}>
@@ -45,22 +48,22 @@ const Footer = (props) => {
                         <li>
                             <h3>For Inquiries & Support</h3>
                             <div className="footer_contact_items">
-                            <a href="tel:+971585672509">+971585672509</a>
-                            <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
+                                <a href="tel:+971585672509">+971585672509</a>
+                                <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
                             </div>
                         </li>
                         <li>
                             <h3>For Car with Driver</h3>
-                                                       <div className="footer_contact_items">
-                            <a href="tel:+971585672509">+971585672509</a>
-                            <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
+                            <div className="footer_contact_items">
+                                <a href="tel:+971585672509">+971585672509</a>
+                                <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
                             </div>
                         </li>
                         <li>
                             <h3>Advertise With Us</h3>
-                                                       <div className="footer_contact_items">
-                            <a href="tel:+971585672509">+971585672509</a>
-                            <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
+                            <div className="footer_contact_items">
+                                <a href="tel:+971585672509">+971585672509</a>
+                                <a href="mailto:info@oneclickdrive.com">info@oneclickdrive.com</a>
                             </div>
                         </li>
                     </ul>

@@ -24,23 +24,27 @@ body {
     background-color: $body_color;
 }
 
+mark {
+    background: $light_gray;
+}
+
 h1 {
     font-size: $title_desktop;
-    font-weight: 600;
+    font-weight: 500;
     color: $text_color;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: $subtitle_desktop;
-    font-weight: 600;
+    font-weight: 500;
     color: $text_color;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: $paragraph_desktop;
-    font-weight: 600;
+    font-weight: 500;
     color: $text_color;
     margin-bottom: 10px;
 }
