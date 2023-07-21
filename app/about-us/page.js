@@ -6,9 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 import {BiCircle} from "react-icons/bi";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
+import YtPlayer from "@/components/YTPlayer/YtPlayer";
 
 const Section = dynamic(() => import('@/components/Section/Section'))
-const YtPlayer = dynamic(() => import('@/components/YtPlayer/YtPlayer'))
 const FramedVideo = dynamic(() => import('@/components/FramedVideo/FramedVideo'))
 const Divider = dynamic(() => import('@/components/Divider/Divider'));
 const StyledButton = dynamic(() => import('@/components/StyledButton/StyledButton').then((module) => module.StyledButton));
