@@ -22,7 +22,7 @@ const AboutUs = () => {
                 subtitle={"where we make renting cars easy. We are UAE’s leading car rental portal. We connect you to our extensive network of rental partners that offer the best deals and cars to fit your every need."}>
             <div className={"flex_center"}>
                 <Link className={"clr_light"} href={"/"}>Home</Link> <span
-                className={"clr_light mr_10 ml_10"}>/</span> <Link className={"clr_light"} href={"about-us"}>About
+                className={"clr_light mr_10 ml_10"}>/</span> <Link className={"clr_light"} href={"/about-us"}>About
                 Us</Link>
             </div>
         </Banner>

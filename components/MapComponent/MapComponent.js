@@ -15,7 +15,7 @@ const MapComponent = () => {
 const WrappedMapComponent = withScriptjs(withGoogleMap(MapComponent));
 
 const MapContainer = () => (
-  <div style={{ height: '400px', width: '100%' }}>
+  <div style={{ height: '100%', width: '100%' }}>
     <WrappedMapComponent
       loadingElement={<div>Loading...</div>}
       googleMapURL={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&v=3.exp&libraries=geometry,drawing,places`}

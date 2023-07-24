@@ -37,6 +37,12 @@
   align-items: center;
 }
 
+.flex_column_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .w_100 {
   width: 100%;
 }
@@ -211,8 +217,8 @@
 
 .styled_input {
   input {
-    background-color: $light !important;
-    border: none !important;
+    background-color: $light_gray !important;
+    border: solid 1px $border_color !important;
     outline: none !important;
     padding: 15px 20px !important;
     border-radius: $radius_low !important;
@@ -229,7 +235,6 @@
       border: none !important;
       padding: 0 10px 0 0;
     }
-
     .ant-input-affix-wrapper-focused {
       box-shadow: $shadow_text_input !important;
     }
@@ -238,13 +243,12 @@
 
 .styled_select {
   width: 100%;
-  max-width: 300px;
 
   .ant-select {
     width: 100%;
 
     .ant-select-selector {
-      border: unset !important;
+      border: solid 1px $border_color !important;
       height: 50px !important;
       background-color: $light_gray !important;
       box-shadow: unset;
@@ -265,4 +269,30 @@
 .ant-select-item-option-selected {
   background-color: $primary !important;
   color: #fff !important;
+}
+
+.styled_textarea {
+  textarea {
+    background-color: $light_gray !important;
+    border: solid 1px $border_color !important;
+    outline: none !important;
+    padding: 15px 20px !important;
+    border-radius: $radius_low !important;
+    width: 100% !important;
+    transition: $transition_light !important;
+    &:focus {
+      box-shadow: $shadow_text_input !important;
+    }
+  }
+
+  &.password_style {
+    .ant-input-password {
+      background-color: $light !important;
+      border: none !important;
+      padding: 0 10px 0 0;
+    }
+    .ant-input-affix-wrapper-focused {
+      box-shadow: $shadow_text_input !important;
+    }
+  }
 }
